@@ -211,29 +211,6 @@ footer .social-icons img:hover {
   transform: scale(1.2);
 }
 
-@media (max-width: 375px) { /* Para pantallas de hasta 375px de ancho */
-  .hero {
-      background-position: left center; /* Mueve la imagen de fondo hacia la izquierda */
-      padding: 3rem 1rem; /* Mantén el padding reducido */
-  }
-
-  .hero .container {
-      width: 100%;
-      max-width: 100%;
-  }
-
-  .hero .title {
-      font-size: 2.5rem;
-      line-height: 1.2;
-      margin-bottom: 10px;
-  }
-
-  .hero .lead {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-  }
-}
-
 @media (max-width: 767px) {
   /* Estilos específicos para móviles */
   .hero .title {
