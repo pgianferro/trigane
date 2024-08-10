@@ -1,0 +1,366 @@
+/* Estilos generales */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Estilos personalizados para el menú */
+.navbar-nav .nav-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.btn-contacto:hover {
+  color: #d05b33;
+}
+
+.navbar-nav .nav-link.btn-contacto {
+  background-color: #d05b33;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link.btn-contacto:hover {
+  background-color: white;
+}
+
+/* Estilos para el menú hamburguesa */
+.navbar-toggler {
+  border-color: #d05b33;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23d05b33' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Estilos para la sección de Hero */
+.hero {
+  min-height: 50vh;
+  position: relative;
+  overflow: hidden;
+  background: url("/img/susferrin-hero-filamentos-3d-printalot.webp")
+    center/cover no-repeat;
+  color: #d05b33;
+  padding: 5rem 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.hero .container {
+  max-width: 1200px;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero .title,
+.hero .lead {
+  font-size: 4rem;
+  font-weight: bolder;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  color: #d05b33;
+}
+
+.hero .lead {
+  font-size: 2rem;
+}
+
+/* Estilos generales para el botón CTA en la sección Hero */
+.hero .btn-cta {
+  display: block; /* Display block para permitir control de alineación */
+  margin: 1.5rem auto; /* Centrado por defecto en móviles */
+  width: fit-content; /* El ancho se ajusta al contenido del botón */
+}
+
+/* Estilos para botones CTA */
+.btn-cta {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  background-color: #d05b33;
+  color: white;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: fit-content;
+  margin: 1.5rem auto;
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: white;
+  color: #d05b33;
+  border: 2px solid #d05b33;
+}
+
+/* Estilos para las secciones de Filamentos e Impresoras 3D */
+#filamentos,
+#impresoras-3d {
+  background-color: #f9f9f9;
+  padding: 3rem 0;
+}
+
+#filamentos h2,
+#impresoras-3d h2,
+#contacto h2 {
+  color: #d05b33;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#filamentos .row,
+#impresoras-3d .row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#filamentos .col-md-6,
+#impresoras-3d .col-md-6 {
+  padding: 15px; /* Ajusta el padding si es necesario para alinear */
+}
+
+#filamentos .col-md-6:first-child,
+#impresoras-3d .col-md-6:first-child {
+  flex: 2; /* Mayor espacio para la imagen */
+  padding-right: 0;
+}
+
+#filamentos .col-md-6:last-child,
+#impresoras-3d .col-md-6:last-child {
+  flex: 1; /* Espacio adecuado para el texto */
+  padding-left: 20px;
+}
+
+.accordion-button {
+  background-color: #d05b33; /* Color de fondo para coincidir con los botones CTA */
+  color: white; /* Color del texto para mejor visibilidad */
+  border: none; /* Eliminar cualquier borde predeterminado */
+  padding: 0.75rem 1.5rem; /* Padding similar al de los botones CTA */
+  font-size: 1.2rem; /* Tamaño de fuente como el de los botones CTA */
+  text-align: center; /* Asegurar que el texto esté centrado */
+  transition: all 0.3s ease; /* Transición suave para efectos hover */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: white; /* Color de fondo cuando el acordeón está expandido */
+  color: #d05b33; /* Color del texto cuando está expandido */
+  border: 2px solid #d05b33; /* Borde sólido para resaltar el botón activo */
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(208, 91, 51, 0.5); /* Sombra de enfoque para mejorar la accesibilidad */
+}
+
+.color-dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px; /* Espacio antes del nombre del color */
+  vertical-align: middle; /* Alinea verticalmente con el texto */
+}
+
+/* Estilos para el formulario de contacto */
+#contacto .form-control {
+  border-radius: 0.3rem;
+  border: 1px solid #ccc;
+}
+
+#contacto .form-control:focus {
+  border-color: #d05b33;
+  box-shadow: 0 0 0 0.2rem rgba(208, 91, 51, 0.25);
+}
+
+/* Estilos para el footer */
+footer {
+  color: white;
+  font-weight: 500;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #d05b33;
+  text-decoration: underline;
+}
+
+footer .social-icons img {
+  width: 24px;
+  transition: transform 0.3s;
+}
+
+footer .social-icons img:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 767px) {
+  /* Estilos específicos para móviles */
+  .hero .title {
+    font-size: 3.5rem; /* Reducción del tamaño de fuente del título */
+    margin-bottom: 15px; /* Ajuste del margen inferior para mantener espaciado adecuado */
+  }
+  .hero .lead {
+    font-size: 1.7rem; /* Reducción del tamaño de fuente del texto secundario */
+    margin-bottom: 20px; /* Ajuste del margen inferior para separar del botón u otros elementos */
+  }
+  .hero .btn-cta {
+    padding: 0.5rem 1rem; /* Reducción del padding del botón para adecuar al espacio disponible */
+    font-size: 1rem; /* Reducción del tamaño de fuente del botón */
+  }
+
+  .accordion-body .row img {
+    max-width: 20%; /* Reduce más el tamaño de la imagen para móviles */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+}
+
+/* Estilos específicos para dispositivos pequeños */
+@media (max-width: 767.98px) {
+  .navbar-nav .nav-link,
+  .btn-cta,
+  footer .col-md-6.text-md-start,
+  footer .col-md-6.text-md-end {
+    text-align: left;
+  }
+
+  .form-control:nth-of-type(1),
+  .form-control:nth-of-type(3),
+  footer .col-md-6.text-md-start img {
+    margin-bottom: 15px;
+  }
+
+  .hero .title,
+  .hero .lead {
+    text-align: center;
+  }
+}
+
+/* Media query para ajustes en dispositivos que no son móviles */
+@media (min-width: 768px) {
+  /* Asumiendo que 768px es el umbral para dispositivos no móviles */
+  .hero .title,
+  .hero .lead {
+    text-align: left; /* Alineación a la izquierda para texto */
+  }
+  .hero .btn-cta {
+    margin: 1.5rem 0 1.5rem 0; /* Ajuste el margen para alinear a la izquierda */
+    display: inline-block; /* Hace que el botón se comporte como inline para alinear a la izquierda */
+  }
+  .accordion-body .row .col-md-3 {
+    flex: 0 0 40%; /* Aumenta el ancho de la columna de la imagen en tablets */
+    max-width: 40%; /* Asegura que no ocupe más del 40% */
+  }
+  .accordion-body .row .col-md-9 {
+    flex: 0 0 60%; /* Reduce el ancho de la columna de texto en tablets */
+    max-width: 60%; /* Asegura que no ocupe más del 60% */
+  }
+}
+
+.accordion-body .row.align-items-center {
+  display: flex;
+  align-items: center; /* Asegura la alineación vertical */
+  height: 100%; /* Opcional, ajusta según la necesidad para asegurar la altura adecuada */
+}
+
+.accordion-body .col-md-6 {
+  display: flex;
+  align-items: center; /* Aplica la alineación vertical dentro de cada columna */
+  justify-content: center; /* Centra el contenido horizontalmente si es necesario */
+}
+
+/* Media query para ajustes en dispositivos tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .accordion-body .row .col-md-1 {
+      flex: 0 0 25%; /* Ajusta el ancho de la columna para la imagen */
+      max-width: 25%;
+    }
+    .accordion-body .row .col-md-11 {
+      flex: 0 0 75%; /* Ajusta el ancho de la columna para el texto */
+      max-width: 75%;
+    }
+  }
+
+/* Media query específica para tablets */
+@media (max-width: 991px) {
+  /* Ajustes comunes para las secciones de Filamentos e Impresoras 3D */
+  #filamentos .row,
+  #impresoras-3d .row {
+    flex-direction: column; /* Cambia la dirección del flex a vertical */
+  }
+
+  #filamentos .col-md-6,
+  #impresoras-3d .col-md-6 {
+    width: 100%; /* Hace que cada columna ocupe el 100% del ancho */
+    padding: 0; /* Elimina el padding para maximizar el uso del espacio */
+  }
+
+  #filamentos .col-md-6:first-child,
+  #impresoras-3d .col-md-6:first-child {
+    order: -1; /* Asegura que la imagen se muestre primero */
+  }
+
+  #filamentos .col-md-6:last-child,
+  #impresoras-3d .col-md-6:last-child {
+    padding: 20px; /* Añade padding alrededor del texto para mejorar la legibilidad */
+  }
+
+  #filamentos img,
+  #impresoras-3d img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área asignada sin perder proporción */
+    display: block; /* Elimina cualquier espacio extra alrededor de la imagen */
+    margin-bottom: 20px; /* Añade un margen inferior a la imagen para separarla del texto */
+  }
+}
+
+
+
+/* Estilos específicos para dispositivos de escritorio */
+@media (min-width: 992px) {
+  #filamentos .row,
+  #impresoras-3d .row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  #filamentos .col-md-6:first-child,
+  #impresoras-3d .col-md-6:first-child {
+    flex: 1; /* Ajusta la proporción según sea necesario, ejemplo, 2 para darle más espacio */
+    padding-right: 0; /* Elimina el padding derecho para maximizar el uso del espacio de la imagen */
+  }
+
+  #filamentos .col-md-6:first-child img,
+  #impresoras-3d .col-md-6:first-child img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    object-fit: cover; /* Cubre completamente el área asignada sin perder la proporción */
+    display: block; /* Elimina cualquier espacio extra alrededor de la imagen */
+  }
+
+  #filamentos .col-md-6:last-child,
+  #impresoras-3d .col-md-6:last-child {
+    flex: 1; /* Espacio adecuado para el texto */
+    padding-left: 20px; /* Espacio para la legibilidad del texto */
+    padding-right: 20px; /* Añade padding derecho para evitar que el texto se pegue a la derecha */
+  }
+}
+
