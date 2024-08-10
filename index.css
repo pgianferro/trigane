@@ -64,6 +64,12 @@ body {
   z-index: 2;
 }
 
+.printalot-logo {
+  width: 250px; /* Ajusta el tamaño según tus necesidades */
+  height: auto; /* Mantén la proporción de la imagen */
+  display: block;
+}
+
 .hero .title,
 .hero .lead {
   font-size: 4rem;
@@ -209,6 +215,32 @@ footer .social-icons img {
 
 footer .social-icons img:hover {
   transform: scale(1.2);
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.whatsapp-float:hover {
+  background-color: #22bb5b;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
