@@ -243,6 +243,13 @@ footer .social-icons img:hover {
   cursor: pointer;
 }
 
+@media (max-width: 375px) {
+  .hero .title {
+    font-size: 3rem; /* Ajusta el tamaño de la fuente según lo necesites */
+    margin-bottom: 10px; /* Ajusta el margen inferior si es necesario */
+  }
+}
+
 @media (max-width: 767px) {
   /* Estilos específicos para móviles */
   .hero .title {
