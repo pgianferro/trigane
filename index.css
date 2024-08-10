@@ -221,15 +221,15 @@ footer .social-icons img:hover {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 20px;
-  right: 20px;
+  bottom: 15px;
+  right: 15px;
   background-color: #25d366;
   color: #FFF;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
   box-shadow: 2px 2px 3px #999;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 .whatsapp-float img {
@@ -262,6 +262,11 @@ footer .social-icons img:hover {
     max-width: 20%; /* Reduce más el tamaño de la imagen para móviles */
     margin: 0 auto; /* Centra la imagen horizontalmente */
   }
+
+    .whatsapp-float {
+        width: 50px; /* Ajusta el tamaño para móviles */
+        height: 50px;
+    }
 }
 
 /* Estilos específicos para dispositivos pequeños */
