@@ -224,7 +224,7 @@ footer .social-icons img:hover {
   bottom: 15px;
   right: 15px;
   background-color: #25d366;
-  color: #FFF;
+  color: #fff;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
@@ -266,14 +266,14 @@ footer .social-icons img:hover {
   }
 
   .accordion-body .row img {
-    max-width: 20%; /* Reduce más el tamaño de la imagen para móviles */
+    max-width: 40%; /* Reduce más el tamaño de la imagen para móviles */
     margin: 0 auto; /* Centra la imagen horizontalmente */
   }
 
-    .whatsapp-float {
-        width: 50px; /* Ajusta el tamaño para móviles */
-        height: 50px;
-    }
+  .whatsapp-float {
+    width: 50px; /* Ajusta el tamaño para móviles */
+    height: 50px;
+  }
 }
 
 /* Estilos específicos para dispositivos pequeños */
@@ -294,6 +294,11 @@ footer .social-icons img:hover {
   .hero .title,
   .hero .lead {
     text-align: center;
+  }
+
+  .accordion-body .row img {
+    max-width: 40%;
+    margin: 0 auto;
   }
 }
 
@@ -316,31 +321,35 @@ footer .social-icons img:hover {
     flex: 0 0 60%; /* Reduce el ancho de la columna de texto en tablets */
     max-width: 60%; /* Asegura que no ocupe más del 60% */
   }
-}
-
-.accordion-body .row.align-items-center {
-  display: flex;
-  align-items: center; /* Asegura la alineación vertical */
-  height: 100%; /* Opcional, ajusta según la necesidad para asegurar la altura adecuada */
-}
-
-.accordion-body .col-md-6 {
-  display: flex;
-  align-items: center; /* Aplica la alineación vertical dentro de cada columna */
-  justify-content: center; /* Centra el contenido horizontalmente si es necesario */
-}
-
-/* Media query para ajustes en dispositivos tablets */
-@media (min-width: 768px) and (max-width: 991px) {
-    .accordion-body .row .col-md-1 {
-      flex: 0 0 25%; /* Ajusta el ancho de la columna para la imagen */
-      max-width: 25%;
-    }
-    .accordion-body .row .col-md-11 {
-      flex: 0 0 75%; /* Ajusta el ancho de la columna para el texto */
-      max-width: 75%;
-    }
+  .accordion-body .row.align-items-center {
+    display: flex;
+    align-items: center; /* Asegura la alineación vertical */
+    height: 100%; /* Opcional, ajusta según la necesidad para asegurar la altura adecuada */
   }
+
+  .accordion-body .col-md-6 {
+    display: flex;
+    align-items: center; /* Aplica la alineación vertical dentro de cada columna */
+    justify-content: center; /* Centra el contenido horizontalmente si es necesario */
+  }
+}
+
+/* Media query específica para tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .accordion-body .row .col-md-1 {
+    flex: 0 0 30%; /* Aumenta el ancho de la columna de la imagen */
+    max-width: 30%;
+  }
+  .accordion-body .row .col-md-11 {
+    flex: 0 0 70%; /* Ajusta el ancho de la columna de texto */
+    max-width: 70%;
+  }
+
+  .accordion-body .row img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
 
 /* Media query específica para tablets */
 @media (max-width: 991px) {
@@ -376,8 +385,6 @@ footer .social-icons img:hover {
   }
 }
 
-
-
 /* Estilos específicos para dispositivos de escritorio */
 @media (min-width: 992px) {
   #filamentos .row,
@@ -407,4 +414,3 @@ footer .social-icons img:hover {
     padding-right: 20px; /* Añade padding derecho para evitar que el texto se pegue a la derecha */
   }
 }
-
