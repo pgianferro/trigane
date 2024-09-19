@@ -69,10 +69,12 @@ section[id] {
   z-index: 2;
 }
 
-.printalot-logo {
-  width: 250px; /* Ajusta el tamaño según tus necesidades */
-  height: auto; /* Mantén la proporción de la imagen */
+.tregane-logo {
+  width: 250px; /* Mantén este valor si es necesario para el tamaño de la imagen */
+  height: auto;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero .title,
@@ -173,12 +175,24 @@ section[id] {
 }
 
 /* Espacio para la imagen rectangular adicional */
-.img-fluid {
+.img-fluid-pie {
   max-width: 100%;
   height: auto;
   margin-top: -15px;
 }
 
+/* Fondo naranja para el título de la sección de Contacto */
+.contacto-header {
+  background-color: #FE5000;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 15px 0;
+}
+
+.contacto-header h2 {
+  color: white;
+  margin: 0;
+}
 
 
 /* Estilos para las secciones de Filamentos e Impresoras 3D */
@@ -189,8 +203,7 @@ section[id] {
 }
 
 #filamentos h2,
-#impresoras-3d h2,
-#contacto h2 {
+#impresoras-3d h2 {
   color: #FE5000;
   font-size: 2rem;
   text-align: center;
@@ -260,6 +273,27 @@ section[id] {
   box-shadow: 0 0 0 0.2rem rgba(208, 91, 51, 0.25);
 }
 
+/* Estilos para el botón Cotizar que ocupa todo el ancho */
+.btn-cta-full {
+  padding: 0.75rem 1.5rem; /* Ajustar el padding para mayor tamaño del botón */
+  font-size: 1.5rem; /* Ajustar el tamaño de fuente */
+  background-color: #FE5000;
+  color: white;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: fit-content; 
+  text-align: center;
+  transition: all 0.3s ease; /* Separación con el contenido anterior */
+}
+
+.btn-cta-full:hover {
+  background-color: white;
+  color: #FE5000;
+  border: 2px solid #FE5000;
+}
+
+
 /* Estilos para el footer */
 footer {
   color: white;
@@ -321,6 +355,10 @@ footer .social-icons img:hover {
 
 @media (max-width: 767px) {
   /* Estilos específicos para móviles */
+  .tregane-logo {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho en móviles */
+    max-width: 250px; /* Limita el ancho máximo */
+  }
   .hero .title {
     font-size: 3rem; /* Reducción del tamaño de fuente del título */
     margin-bottom: 15px; /* Ajuste del margen inferior para mantener espaciado adecuado */
@@ -360,6 +398,14 @@ footer .social-icons img:hover {
     margin-bottom: 15px;
   }
 
+  .tregane-logo {
+    width: 250px; /* Mantén este valor si es necesario para el tamaño de la imagen */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .hero .title,
   .hero .lead {
     text-align: center;
@@ -381,6 +427,13 @@ footer .social-icons img:hover {
   .hero .btn-cta {
     margin: 1.5rem 0 1.5rem 0; /* Ajuste el margen para alinear a la izquierda */
     display: inline-block; /* Hace que el botón se comporte como inline para alinear a la izquierda */
+  }
+  .tregane-logo {
+    width: 250px; /* Mantén este valor si es necesario para el tamaño de la imagen */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .accordion-body .row .col-md-3 {
     flex: 0 0 40%; /* Aumenta el ancho de la columna de la imagen en tablets */
@@ -409,6 +462,13 @@ footer .social-icons img:hover {
       flex: 0 0 50%;
       max-width: 50%;
   }
+  .tregane-logo {
+    width: 250px; /* Mantén este valor si es necesario para el tamaño de la imagen */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
@@ -426,6 +486,13 @@ footer .social-icons img:hover {
   .accordion-body .row img {
     width: 100% !important;
     height: auto !important;
+  }
+  .tregane-logo {
+    width: 250px; /* Mantén este valor si es necesario para el tamaño de la imagen */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -461,6 +528,13 @@ footer .social-icons img:hover {
     display: block; /* Elimina cualquier espacio extra alrededor de la imagen */
     margin-bottom: 20px; /* Añade un margen inferior a la imagen para separarla del texto */
   }
+  .tregane-logo {
+    width: 250px; /* Mantén este valor si es necesario para el tamaño de la imagen */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Estilos específicos para dispositivos de escritorio */
@@ -490,5 +564,12 @@ footer .social-icons img:hover {
     flex: 1; /* Espacio adecuado para el texto */
     padding-left: 20px; /* Espacio para la legibilidad del texto */
     padding-right: 20px; /* Añade padding derecho para evitar que el texto se pegue a la derecha */
+  }
+  .tregane-logo {
+    width: 250px; /* Mantén este valor si es necesario para el tamaño de la imagen */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
