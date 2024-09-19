@@ -11,11 +11,11 @@ body {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.btn-contacto:hover {
-  color: #d05b33;
+  color: #FE5000;
 }
 
 .navbar-nav .nav-link.btn-contacto {
-  background-color: #d05b33;
+  background-color: #FE5000;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -28,7 +28,7 @@ body {
 
 /* Estilos para el menú hamburguesa */
 .navbar-toggler {
-  border-color: #d05b33;
+  border-color: #FE5000;
 }
 
 .navbar-toggler .navbar-toggler-icon {
@@ -42,13 +42,13 @@ section[id] {
 
 /* Estilos para la sección de Hero */
 .hero {
-  min-height: 50vh;
+  min-height: auto;
   position: relative;
   overflow: hidden;
-  background: url("img/susferrin-hero-filamentos-3d-printalot.webp")
+  background: url("img/susferrin-hero-trigane-herramientas-de-alto-impacto-2.jpg")
     center/cover no-repeat;
-  color: #d05b33;
-  padding: 5rem 0;
+  color: #FE5000;
+  padding: 3rem 0;
 }
 
 .hero::before {
@@ -81,7 +81,7 @@ section[id] {
   font-weight: bolder;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
-  color: #d05b33;
+  color: #FE5000;
 }
 
 .hero .lead {
@@ -99,7 +99,7 @@ section[id] {
 .btn-cta {
   padding: 0.75rem 1.5rem;
   font-size: 1.2rem;
-  background-color: #d05b33;
+  background-color: #FE5000;
   color: white;
   border-radius: 0.3rem;
   text-transform: uppercase;
@@ -113,9 +113,73 @@ section[id] {
 
 .btn-cta:hover {
   background-color: white;
-  color: #d05b33;
-  border: 2px solid #d05b33;
+  color: #FE5000;
+  border: 2px solid #FE5000;
 }
+
+
+/*CATEGORIAS*/
+/* Fondo naranja para el título */
+.llaves-header {
+  background-color: #FE5000;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 15px 0;
+}
+
+.llaves-header h2 {
+  color: white;
+  margin: 0;
+}
+
+/* Estilos para las cards */
+.card {
+  background-color: white;
+  border: 2px solid #FE5000;
+}
+
+/* Imagen superior con borde */
+.card-img-top {
+  max-height: 250px;
+  object-fit: cover;
+  border-bottom-width: 4px;
+  border-color: #FE5000;
+}
+
+/* Estilos para el título del producto */
+.card-title {
+  background-color: #FE5000 !important;
+  color: white;
+  font-weight: bold;
+  margin: 0 !important;
+  padding: 10px 0 !important;
+  font-size: 1.2rem;
+  width: 100% !important;
+  text-align: center;
+}
+
+/* Estilos para el subtítulo */
+.card-subtitle {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FE5000;
+  margin-top: 15px; /* Ajuste de espacio superior */
+}
+
+/* Estilos para la descripción */
+.card-text {
+  font-size: 0.875rem;
+}
+
+/* Espacio para la imagen rectangular adicional */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-top: -15px;
+}
+
+
 
 /* Estilos para las secciones de Filamentos e Impresoras 3D */
 #filamentos,
@@ -127,7 +191,7 @@ section[id] {
 #filamentos h2,
 #impresoras-3d h2,
 #contacto h2 {
-  color: #d05b33;
+  color: #FE5000;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 20px;
@@ -157,7 +221,7 @@ section[id] {
 }
 
 .accordion-button {
-  background-color: #d05b33; /* Color de fondo para coincidir con los botones CTA */
+  background-color: #FE5000; /* Color de fondo para coincidir con los botones CTA */
   color: white; /* Color del texto para mejor visibilidad */
   border: none; /* Eliminar cualquier borde predeterminado */
   padding: 0.75rem 1.5rem; /* Padding similar al de los botones CTA */
@@ -168,8 +232,8 @@ section[id] {
 
 .accordion-button:not(.collapsed) {
   background-color: white; /* Color de fondo cuando el acordeón está expandido */
-  color: #d05b33; /* Color del texto cuando está expandido */
-  border: 2px solid #d05b33; /* Borde sólido para resaltar el botón activo */
+  color: #FE5000; /* Color del texto cuando está expandido */
+  border: 2px solid #FE5000; /* Borde sólido para resaltar el botón activo */
 }
 
 .accordion-button:focus {
@@ -192,7 +256,7 @@ section[id] {
 }
 
 #contacto .form-control:focus {
-  border-color: #d05b33;
+  border-color: #FE5000;
   box-shadow: 0 0 0 0.2rem rgba(208, 91, 51, 0.25);
 }
 
@@ -209,7 +273,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #d05b33;
+  color: #FE5000;
   text-decoration: underline;
 }
 
@@ -338,6 +402,15 @@ footer .social-icons img:hover {
     justify-content: center; /* Centra el contenido horizontalmente si es necesario */
   }
 }
+
+/* Ajuste de 2 columnas en tablets */
+@media (min-width: 576px) and (max-width: 991px) {
+  .col-sm-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+
 
 /* Media query específica para tablets */
 @media (min-width: 768px) and (max-width: 991px) {
