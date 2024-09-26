@@ -58,30 +58,35 @@
     </header>
     <main class="bg-light">
         <!-- Sección de Hero -->
-        <section id="inicio" class="hero bg-dark text-white text-lg-start text-md-center text-center py-2">
-            <div class="container">
+        <section id="inicio"
+            class="hero bg-dark text-white text-lg-start text-md-center text-center py-2 position-relative">
+            <div class="video-background">
+                <!-- Video de fondo (YouTube) -->
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/355UiB7Fg4Q?autoplay=1&mute=1&controls=0&loop=1&playlist=355UiB7Fg4Q"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <!-- Capa de color superpuesta sobre el video -->
+            <div class="overlay"></div>
+
+            <div class="container position-relative text-white" style="z-index: 2;">
                 <div class="row">
                     <!-- Columna con el logo, título, descripción y botón -->
                     <div class="col-lg-6">
                         <!-- Logo de Trigane -->
                         <img src="img/susferrin-trigane-logo-white.png" alt="Logo Trigane" class="printalot-logo mb-4">
                         <h1 class="title text-lg-start text-md-center">HERRAMIENTAS DE ALTO IMPACTO</h1>
-                        <p class="lead text-lg-start text-md-center">Llaves · Tubos · Adaptadores · Herramientas Especiales</p>
+                        <p class="lead text-lg-start text-md-center">Llaves · Tubos · Adaptadores · Herramientas
+                            Especiales</p>
                         <a href="https://wa.link/93njz2" class="btn btn-cta" target="_blank">COTIZAR</a>
-                    </div>
-
-                    <!-- Columna para el video de YouTube -->
-                    <div class="col-lg-6 d-flex justify-content-center align-items-center mt-4 mt-lg-0">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/355UiB7Fg4Q?autoplay=1&mute=1"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                     </div>
                 </div>
             </div>
         </section>
+
+
         <!-- Párrafo informativo -->
         <section id="about-trigane" class="py-4 bg-light mt-5 pb-1">
             <div class="container">
