@@ -59,7 +59,7 @@
     <main class="bg-light">
         <!-- Sección de Hero -->
         <section id="inicio"
-            class="hero bg-dark text-white text-lg-start text-md-center text-center py-2 position-relative d-none d-md-block pt-5 pt-md-7">
+            class="hero bg-dark text-white text-lg-start text-md-center text-center py-2 position-relative d-none d-md-block pt-7 pt-md-7">
             <div class="video-background">
                 <!-- Video de fondo local -->
                 <video autoplay muted loop playsinline>
@@ -694,6 +694,17 @@
             }
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.querySelector('video');
+            if (video) {
+                video.muted = true; // Asegúrate de que esté silenciado
+                video.play().catch(error => {
+                    console.log('Autoplay falló, intentaremos jugar con interacción.', error);
+                });
+            }
+        });
+    </script>    
     <a href="https://wa.link/93njz2" class="whatsapp-float" target="_blank">
         <img src="img/floating-whatsapp-icon-white-min.png" alt="WhatsApp" />
     </a>
