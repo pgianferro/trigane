@@ -59,7 +59,7 @@
     <main class="bg-light">
         <!-- Sección de Hero -->
         <section id="inicio"
-            class="hero bg-dark text-white text-lg-start text-md-center text-center py-2 position-relative d-none d-md-block pt-7 pt-md-7">
+            class="hero bg-dark text-white text-lg-start text-md-center text-center py-2 position-relative d-none d-md-block pt-5 pt-md-7">
             <div class="video-background">
                 <!-- Video de fondo local -->
                 <video autoplay muted loop playsinline>
@@ -99,10 +99,13 @@
                         <!-- Subtítulo -->
                         <p class="lead text-white">Llaves · Tubos · Adaptadores · Herramientas Especiales</p>
                         <!-- Video promocional que ocupe todo el ancho -->
-                        <video class="w-100" autoplay muted loop playsinline>
-                            <source src="img/trigane_video_1080p_comp.mp4" type="video/mp4">
-                            Tu navegador no soporta la etiqueta de video.
-                        </video>
+                        <div class="video-container">
+                            <iframe width="100%" height="315"
+                                src="https://www.youtube.com/embed/355UiB7Fg4Q?autoplay=1&mute=1&playsinline=1&loop=1&controls=0&rel=0&showinfo=0&modestbranding=1"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
                         <!-- Botón Cotizar -->
                         <a href="https://wa.link/93njz2" class="btn btn-cta mt-3" target="_blank">COTIZAR</a>
                     </div>
@@ -704,7 +707,7 @@
                 });
             }
         });
-    </script>    
+    </script>
     <a href="https://wa.link/93njz2" class="whatsapp-float" target="_blank">
         <img src="img/floating-whatsapp-icon-white-min.png" alt="WhatsApp" />
     </a>
