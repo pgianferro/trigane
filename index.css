@@ -11,11 +11,11 @@ body {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.btn-contacto:hover {
-  color: #FE5000;
+  color: #fe5000;
 }
 
 .navbar-nav .nav-link.btn-contacto {
-  background-color: #FE5000;
+  background-color: #fe5000;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -28,7 +28,7 @@ body {
 
 /* Estilos para el menú hamburguesa */
 .navbar-toggler {
-  border-color: #FE5000;
+  border-color: #fe5000;
 }
 
 .navbar-toggler .navbar-toggler-icon {
@@ -93,12 +93,12 @@ section[id] {
   color: white;
 }
 
-.hero h1, .hero p, .hero a {
+.hero h1,
+.hero p,
+.hero a {
   z-index: 2;
   color: white;
 }
-
-
 
 /*Anteriores configuraciones de hero*/
 .hero {
@@ -107,7 +107,7 @@ section[id] {
   overflow: hidden;
   /* background: url("img/susferrin-hero-trigane-herramientas-de-alto-impacto-2.jpg")
     center/cover no-repeat; */
-  color: #FE5000;
+  color: #fe5000;
   padding: 3rem 0;
 }
 
@@ -143,7 +143,7 @@ section[id] {
   font-weight: bolder;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
-  color: #FE5000;
+  color: #fe5000;
 }
 
 .hero .lead {
@@ -161,7 +161,7 @@ section[id] {
 .btn-cta {
   padding: 0.75rem 1.5rem;
   font-size: 1.2rem;
-  background-color: #FE5000;
+  background-color: #fe5000;
   color: white;
   border-radius: 0.3rem;
   text-transform: uppercase;
@@ -175,15 +175,14 @@ section[id] {
 
 .btn-cta:hover {
   background-color: white;
-  color: #FE5000;
-  border: 2px solid #FE5000;
+  color: #fe5000;
+  border: 2px solid #fe5000;
 }
-
 
 /*CATEGORIAS*/
 /* Fondo naranja para el título */
 .llaves-header {
-  background-color: #FE5000;
+  background-color: #fe5000;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   padding: 15px 0;
@@ -197,7 +196,7 @@ section[id] {
 /* Estilos para las cards */
 .card {
   background-color: white;
-  border: 2px solid #FE5000;
+  border: 2px solid #fe5000;
 }
 
 /* Imagen superior con borde */
@@ -205,12 +204,12 @@ section[id] {
   max-height: 250px;
   object-fit: cover;
   border-bottom-width: 4px;
-  border-color: #FE5000;
+  border-color: #fe5000;
 }
 
 /* Estilos para el título del producto */
 .card-title {
-  background-color: #FE5000 !important;
+  background-color: #fe5000 !important;
   color: white;
   font-weight: bold;
   margin: 0 !important;
@@ -225,7 +224,7 @@ section[id] {
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #FE5000;
+  color: #fe5000;
   margin-top: 15px; /* Ajuste de espacio superior */
 }
 
@@ -243,7 +242,7 @@ section[id] {
 
 /* Fondo naranja para el título de la sección de Contacto */
 .contacto-header {
-  background-color: #FE5000;
+  background-color: #fe5000;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   padding: 15px 0;
@@ -261,7 +260,7 @@ section[id] {
 }
 
 #contacto .form-control:focus {
-  border-color: #FE5000;
+  border-color: #fe5000;
   box-shadow: 0 0 0 0.2rem rgba(208, 91, 51, 0.25);
 }
 
@@ -269,22 +268,21 @@ section[id] {
 .btn-cta-full {
   padding: 0.75rem 1.5rem; /* Ajustar el padding para mayor tamaño del botón */
   font-size: 1.5rem; /* Ajustar el tamaño de fuente */
-  background-color: #FE5000;
+  background-color: #fe5000;
   color: white;
   border-radius: 0.3rem;
   text-transform: uppercase;
   font-weight: bold;
-  width: fit-content; 
+  width: fit-content;
   text-align: center;
   transition: all 0.3s ease; /* Separación con el contenido anterior */
 }
 
 .btn-cta-full:hover {
   background-color: white;
-  color: #FE5000;
-  border: 2px solid #FE5000;
+  color: #fe5000;
+  border: 2px solid #fe5000;
 }
-
 
 /* Estilos para el footer */
 footer {
@@ -299,7 +297,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #FE5000;
+  color: #fe5000;
   text-decoration: underline;
 }
 
@@ -372,6 +370,80 @@ footer .social-icons img:hover {
   .whatsapp-float {
     width: 50px; /* Ajusta el tamaño para móviles */
     height: 50px;
+  }
+
+  /* Sección Hero especial para móviles */
+  .hero-mobile {
+    background-image: url("img/susferrin-hero-trigane-herramientas-de-alto-impacto-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0; /* Eliminar padding superior/inferior */
+    position: relative; /* Necesario para asegurar que los elementos estén encima del fondo */
+  }
+
+  /* Asegurar que los elementos estén encima del fondo */
+  .hero-mobile .container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .hero-mobile .title {
+    font-size: 2rem; /* Ajusta el tamaño de la fuente para móviles */
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+
+  .hero-mobile .lead {
+    font-size: 1.2rem;
+    margin-bottom: 1rem; /* Reducir espacio entre subtítulo y video */
+  }
+
+  /* Video que ocupa todo el ancho */
+  .hero-mobile video {
+    width: 100vw; /* Forzar a ocupar todo el ancho del viewport */
+    height: auto; /* Mantener la proporción del video */
+    max-height: none; /* Eliminar cualquier limitación en la altura */
+    object-fit: cover; /* Asegurar que el video cubra todo el espacio sin deformarse */
+  }
+
+  .hero-mobile .btn-cta {
+    background-color: #fe5000;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .hero-mobile .btn-cta:hover {
+    background-color: white;
+    color: #fe5000;
+    border: 2px solid #fe5000;
+  }
+
+  /* Fondo de imagen ajustado */
+  .hero-mobile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(
+      0,
+      0,
+      0,
+      0.3
+    ); /* Añadimos una ligera superposición para mejorar la legibilidad del texto */
+    z-index: 1; /* Esta capa queda justo debajo del contenido */
   }
 }
 
@@ -451,8 +523,8 @@ footer .social-icons img:hover {
 /* Ajuste de 2 columnas en tablets */
 @media (min-width: 576px) and (max-width: 991px) {
   .col-sm-6 {
-      flex: 0 0 50%;
-      max-width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
   .tregane-logo {
     width: 250px; /* Mantén este valor si es necesario para el tamaño de la imagen */
@@ -462,7 +534,6 @@ footer .social-icons img:hover {
     margin-right: auto;
   }
 }
-
 
 /* Media query específica para tablets */
 @media (min-width: 768px) and (max-width: 991px) {
