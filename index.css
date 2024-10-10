@@ -134,7 +134,6 @@ section[id] {
   height: auto;
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%; /* Relación de aspecto 16:9 */
 }
 
 .video-container iframe {
@@ -400,7 +399,8 @@ footer .social-icons img:hover {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    padding: 0; /* Eliminar padding superior/inferior */
+    padding: 0; /* Elimina cualquier relleno extra */
+    margin: 0;  /* Asegúrate de que no haya márgenes que separen los elementos */
     position: relative; /* Necesario para asegurar que los elementos estén encima del fondo */
   }
 
@@ -409,26 +409,27 @@ footer .social-icons img:hover {
     position: relative;
     z-index: 2;
     text-align: center;
+    padding-top: 1rem; /* Ajusta el relleno superior si necesitas algo de espacio */
+    padding-bottom: 0;  /* Elimina cualquier relleno innecesario en la parte inferior */
   }
 
   .hero-mobile .title {
-    font-size: 2rem; /* Ajusta el tamaño de la fuente para móviles */
-    margin-bottom: 0.5rem;
+    font-size: 2rem; /* Mantén el tamaño del título ajustado a pantallas móviles */
+    margin-bottom: 0.5rem; /* Reducir el margen inferior para acercarlo al video */
     color: white;
-  }
+}
 
-  .hero-mobile .lead {
+.hero-mobile .lead {
     font-size: 1.2rem;
-    margin-bottom: 1rem; /* Reducir espacio entre subtítulo y video */
-  }
+    margin-bottom: 1rem; /* Reducir el espacio entre el subtítulo y el video */
+}
 
-  /* Video que ocupa todo el ancho */
-  .hero-mobile video {
-    width: 100vw; /* Forzar a ocupar todo el ancho del viewport */
-    height: auto; /* Mantener la proporción del video */
-    max-height: none; /* Eliminar cualquier limitación en la altura */
-    object-fit: cover; /* Asegurar que el video cubra todo el espacio sin deformarse */
-  }
+.hero-mobile video {
+    width: 100vw; /* Asegura que el video ocupe todo el ancho de la pantalla */
+    height: auto;
+    object-fit: cover; /* Para que el video se ajuste correctamente */
+}
+
 
   .hero-mobile .btn-cta {
     background-color: #fe5000;
