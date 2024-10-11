@@ -9,6 +9,8 @@
     <link rel="icon" href="img/susferrin-avatar.png" type="image/png">
     <!-- Enlace a la hoja de estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Enlace a tu hoja de estilos personalizada -->
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet"
@@ -16,47 +18,46 @@
 </head>
 
 <body>
-<!-- Navbar -->
-<header class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="#">
-            <img src="img/susferrin-trigane-logo-min.png"
-                 alt="Susferrin Trigane Herramientas de Alto Impacto Logo" class="img-fluid"
-                 style="max-width: 170px;">
-        </a>
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="img/susferrin-trigane-logo-min.png" alt="Susferrin Trigane Herramientas de Alto Impacto Logo"
+                    class="img-fluid" style="max-width: 170px;">
+            </a>
 
-        <!-- Botón de Menú Hamburguesa -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <!-- Botón de Menú Hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- Menú Principal -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#inicio">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#llaves">Llaves</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#tubos">Tubos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#adaptadores">Adaptadores</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#herramientas-especiales">Herramientas Especiales</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-contacto" href="#contacto">Contacto</a>
-                </li>
-            </ul>
+            <!-- Menú Principal -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#llaves">Llaves</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tubos">Tubos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#adaptadores">Adaptadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#herramientas-especiales">Herramientas Especiales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-contacto" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
     <main class="bg-light">
         <!-- Sección de Hero -->
@@ -132,147 +133,236 @@
             <div class="llaves-header bg-orange text-white text-center py-3">
                 <h2 class="fw-bold mb-0">Llaves</h2>
             </div>
-            <!-- Resto de la sección con fondo blanco: Prods 1 a 4 -->
-            <div class="container py-4 bg-light">
+
+            <!-- Contenedor para productos -->
+            <div class="container py-4">
                 <div class="row">
-                    <!-- Primera card -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-orange">
-                            <img src="img/productos/01-Llave_de_Golpe_Hexagonal.webp" alt="Llave de Golpe Hexagonal"
-                                class="card-img-top border-bottom">
-                            <h3 class="card-title">LLAVE DE GOLPE HEXAGONAL</h3>
-                            <div class="card-body text-center p-2">
-                                <!-- Título del producto con fondo #FE5000 y letras negritas -->
-                                <h4 class="card-subtitle mt-2">DESCRIPCIÓN</h4>
-                                <p class="card-text">Llave de Golpe Hexagonal Milimétrica/Pulgada</p>
-                                <img src="img/productos/01-Llave_de_Golpe_Hexagonal_pie.webp" alt="Descripción extra"
+                    <!-- Producto 1 con atributos en una sola fila -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="img/productos/01-Llave_de_Golpe_Hexagonal.webp" alt="Llave de Golpe Hexagonal"
                                     class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="product-title mt-md-0 mt-3 text-center text-md-start">LLAVE DE GOLPE
+                                    HEXAGONAL</h3>
+                                <p class="product-description text-center text-md-start">Llave de Golpe Hexagonal
+                                    Milimétrica/Pulgada</p>
+
+                                <!-- Atributos del producto en una sola fila -->
+                                                                <div class="product-attributes mt-3 d-flex align-items-center justify-content-center justify-content-md-start">
+                                    <div class="d-flex align-items-center me-4">
+                                        <i class="fas fa-screwdriver-wrench attribute-icon"></i>
+                                        <span class="attribute-text text-center text-md-start">Tratamiento: Templado y Revenido</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-screwdriver-wrench attribute-icon"></i>
+                                        <span class="attribute-text text-center text-md-start">Material: Acero de alta calidad</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Segunda card -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-orange">
-                            <img src="img/productos/02-Llave_de_Golpe_Estriada.webp" alt="Llave de Golpe Estriada"
-                                class="card-img-top border-bottom">
-                            <h3 class="card-title">LLAVE DE GOLPE ESTRIADA</h3>
-                            <div class="card-body text-center p-2">
-                                <!-- Título del producto con fondo #FE5000 y letras negritas -->
-                                <h4 class="card-subtitle mt-2">DESCRIPCIÓN</h4>
-                                <p class="card-text">Llave de Golpe Estriada Milimétrica/Pulgada</p>
-                                <img src="img/productos/02-Llave_de_Golpe_Estriada_pie.webp" alt="Descripción extra"
+                    <!-- Producto 2 con atributos en una sola fila -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="img/productos/02-Llave_de_Golpe_Estriada.webp" alt="Llave de Golpe Estriada"
                                     class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="product-title mt-md-0 mt-3 text-center text-md-start">LLAVE DE GOLPE ESTRIADA
+                                </h3>
+                                <p class="product-description text-center text-md-start">Llave de Golpe Estriada
+                                    Milimétrica/Pulgada</p>
+
+                                <!-- Atributos del producto en una sola fila -->
+                                                                <div class="product-attributes mt-3 d-flex align-items-center justify-content-center justify-content-md-start">
+                                    <div class="d-flex align-items-center me-4">
+                                        <i class="fas fa-screwdriver-wrench attribute-icon"></i>
+                                        <span class="attribute-text text-center text-md-start">Uso intensivo</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-screwdriver-wrench attribute-icon"></i>
+                                        <span class="attribute-text text-center text-md-start">Alta resistencia</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tercera card -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-orange">
-                            <img src="img/productos/03-Llave_de_Golpe_Fija.webp" alt="Llave de Golpe Fija"
-                                class="card-img-top border-bottom">
-                            <h3 class="card-title">LLAVE DE GOLPE FIJA</h3>
-                            <div class="card-body text-center p-2">
-                                <!-- Título del producto con fondo #FE5000 y letras negritas -->
-                                <h4 class="card-subtitle mt-2">DESCRIPCIÓN</h4>
-                                <p class="card-text">Llave de Golpe Fija Milimétrica/Pulgada</p>
-                                <img src="img/productos/03-Llave_de_Golpe_Fija_pie.webp" alt="Descripción extra"
+                    <!-- Producto 3 con atributos en una sola fila -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="img/productos/03-Llave_de_Golpe_Fija.webp" alt="Llave de Golpe Fija"
                                     class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="product-title mt-md-0 mt-3 text-center text-md-start">LLAVE DE GOLPE FIJA
+                                </h3>
+                                <p class="product-description text-center text-md-start">Llave de Golpe Fija
+                                    Milimétrica/Pulgada</p>
+
+                                <!-- Atributos del producto en una sola fila -->
+                                                                <div class="product-attributes mt-3 d-flex align-items-center justify-content-center justify-content-md-start">
+                                    <div class="d-flex align-items-center me-4">
+                                        <i class="fas fa-screwdriver-wrench attribute-icon"></i>
+                                        <span class="attribute-text text-center text-md-start">Tratamiento: Templado y Revenido</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-screwdriver-wrench attribute-icon"></i>
+                                        <span class="attribute-text text-center text-md-start">Material: Acero de alta calidad</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Cuarta card -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-orange">
-                            <img src="img/productos/04-Llave_de_Golpe_Estriada_Acodada.webp"
-                                alt="Llave de Golpe Acodada Estriada" class="card-img-top border-bottom">
-                            <h3 class="card-title">LLAVE DE GOLPE ACODADA ESTR.</h3>
-                            <div class="card-body text-center p-2">
-                                <!-- Título del producto con fondo #FE5000 y letras negritas -->
-                                <h4 class="card-subtitle mt-2">DESCRIPCIÓN</h4>
-                                <p class="card-text">Llave de Golpe Acodada Estriada Milimétrica/Pulgada</p>
-                                <img src="img/productos/04-Llave_de_Golpe_Estriada_Acodada_pie.webp"
-                                    alt="Descripción extra" class="img-fluid">
+                    <!-- Producto 4 con atributos en una sola fila -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="img/productos/04-Llave_de_Golpe_Estriada_Acodada.webp"
+                                    alt="Llave de Golpe Acodada Estriada" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="product-title mt-md-0 mt-3 text-center text-md-start">LLAVE DE GOLPE ACODADA
+                                    ESTRIADA</h3>
+                                <p class="product-description text-center text-md-start">Llave de Golpe Acodada
+                                    Milimétrica/Pulgada</p>
+
+                                <!-- Atributos del producto en una sola fila -->
+                                <div class="product-attributes mt-3 d-flex align-items-center justify-content-center justify-content-md-start">
+                                    <div class="d-flex align-items-center me-4">
+                                        <i class="fas fa-screwdriver-wrench attribute-icon"></i>
+                                        <span class="attribute-text text-center text-md-start">Uso intensivo</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-screwdriver-wrench attribute-icon"></i>
+                                        <span class="attribute-text text-center text-md-start">Alta resistencia</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Resto de la sección con fondo blanco: Prods 5 a 8 -->
-            <div class="container py-4 bg-light mt-0 pt-0">
+
+                <!-- Segunda fila de productos -->
                 <div class="row">
-                    <!-- Quinta card -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-orange">
-                            <img src="img/productos/05-llave_combinada.webp" alt="Llave Combinada"
-                                class="card-img-top border-bottom">
-                            <h3 class="card-title">LLAVE COMBINADA</h3>
-                            <div class="card-body text-center p-2">
-                                <!-- Título del producto con fondo #FE5000 y letras negritas -->
-                                <h4 class="card-subtitle mt-2">DESCRIPCIÓN</h4>
-                                <p class="card-text">Llave Combinada Milimétrica/Pulgada</p>
-                                <img src="img/productos/05-llave_combinada_pie.webp" alt="Descripción extra"
+                    <!-- Producto 5 con atributos en una sola fila -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="img/productos/05-llave_combinada.webp" alt="Llave Combinada"
                                     class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="product-title mt-md-0 mt-3 text-center text-md-start">LLAVE COMBINADA</h3>
+                                <p class="product-description text-center text-md-start">Llave Combinada
+                                    Milimétrica/Pulgada</p>
+
+                                <!-- Atributos del producto en una sola fila -->
+                                                                <div class="product-attributes mt-3 d-flex align-items-center justify-content-center justify-content-md-start">
+                                    <div class="d-flex align-items-center me-4">
+                                        <i class="fas fa-screwdriver-wrench attribute-icon"></i>
+                                        <span class="attribute-text text-center text-md-start">Tratamiento: Templado y Revenido</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-screwdriver-wrench attribute-icon"></i>
+                                        <span class="attribute-text text-center text-md-start">Material: Acero de alta calidad</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Sexta card -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-orange">
-                            <img src="img/productos/06-llave_de_fuerza.webp" alt="Llave de fuerza con Cabeza Articulada"
-                                class="card-img-top border-bottom">
-                            <h3 class="card-title">LLAVE DE FUERZA</h3>
-                            <div class="card-body text-center p-2">
-                                <!-- Título del producto con fondo #FE5000 y letras negritas -->
-                                <h4 class="card-subtitle mt-2">DESCRIPCIÓN</h4>
-                                <p class="card-text">Llave de fuerza con Cabeza Articulada</p>
-                                <img src="img/productos/06-llave_de_fuerza_pie.webp" alt="Descripción extra"
-                                    class="img-fluid">
+                    <!-- Producto 6 con atributos en una sola fila -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="img/productos/06-llave_de_fuerza.webp"
+                                    alt="Llave de Fuerza con Cabeza Articulada" class="img-fluid">
                             </div>
-                        </div>
-                    </div>
+                            <div class="col-md-6">
+                                <h3 class="product-title mt-md-0 mt-3 text-center text-md-start">LLAVE DE FUERZA</h3>
+                                <p class="product-description text-center text-md-start">Llave de Fuerza con Cabeza
+                                    Articulada</p>
 
-                    <!-- Séptima card -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-orange">
-                            <img src="img/productos/07-llave_gancho.webp" alt="Llave Gancho"
-                                class="card-img-top border-bottom">
-                            <h3 class="card-title">LLAVE GANCHO</h3>
-                            <div class="card-body text-center p-2">
-                                <!-- Título del producto con fondo #FE5000 y letras negritas -->
-                                <h4 class="card-subtitle mt-2">DESCRIPCIÓN</h4>
-                                <p class="card-text">Llave Gancho</p>
-                                <img src="img/productos/07-llave_gancho_pie.webp" alt="Descripción extra"
-                                    class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Octava card -->
-                    <div class="col-md-3 col-sm-6 mb-4 d-none">
-                        <div class="card h-100 border-orange">
-                            <img src="img/productos/01-Llave_de_Golpe_Hexagonal.webp" alt="Llave de Golpe Hexagonal"
-                                class="card-img-top border-bottom">
-                            <h3 class="card-title">LLAVE DE GOLPE HEXAGONAL</h3>
-                            <div class="card-body text-center p-2">
-                                <!-- Título del producto con fondo #FE5000 y letras negritas -->
-                                <h4 class="card-subtitle mt-2">DESCRIPCIÓN</h4>
-                                <p class="card-text">Llave de Golpe Hexagonal Milimétrica/Pulgada</p>
-                                <img src="img/productos/01-Llave_de_Golpe_Hexagonal_pie.webp" alt="Descripción extra"
-                                    class="img-fluid">
+                                <!-- Atributos del producto en una sola fila -->
+                                                                <div class="product-attributes mt-3 d-flex align-items-center justify-content-center justify-content-md-start">
+                                    <div class="d-flex align-items-center me-4">
+                                        <i class="fas fa-screwdriver-wrench attribute-icon"></i>
+                                        <span class="attribute-text text-center text-md-start">Uso intensivo</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-screwdriver-wrench attribute-icon"></i>
+                                        <span class="attribute-text text-center text-md-start">Alta resistencia</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Botón Cotizar -->
-            <div class="d-flex justify-content-center">
-                <a href="https://wa.link/93njz2" class="btn btn-cta-full" target="_blank">COTIZAR</a>
+
+                <!-- Tercera fila de productos -->
+                <div class="row">
+                    <!-- Producto 7 con atributos en una sola fila -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="img/productos/07-llave_gancho.webp" alt="Llave Gancho" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="product-title mt-md-0 mt-3 text-center text-md-start">LLAVE GANCHO</h3>
+                                <p class="product-description text-center text-md-start">Llave Gancho</p>
+
+                                <!-- Atributos del producto en una sola fila -->
+                                                                <div class="product-attributes mt-3 d-flex align-items-center justify-content-center justify-content-md-start">
+                                    <div class="d-flex align-items-center me-4">
+                                        <i class="fas fa-screwdriver-wrench attribute-icon"></i>
+                                        <span class="attribute-text text-center text-md-start">Tratamiento: Templado y Revenido</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-screwdriver-wrench attribute-icon"></i>
+                                        <span class="attribute-text text-center text-md-start">Material: Acero de alta calidad</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 8 con atributos en una sola fila -->
+                    <div class="col-lg-6 mb-4 d-none">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="img/productos/08-llave_adicional.webp" alt="Llave Adicional"
+                                    class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="product-title mt-md-0 mt-3 text-center text-md-start">LLAVE ADICIONAL</h3>
+                                <p class="product-description text-center text-md-start">Llave Adicional Descripción</p>
+
+                                <!-- Atributos del producto en una sola fila -->
+                                                                <div class="product-attributes mt-3 d-flex align-items-center justify-content-center justify-content-md-start">
+                                    <div class="d-flex align-items-center me-4">
+                                        <i class="fas fa-screwdriver-wrench attribute-icon"></i>
+                                        <span class="attribute-text text-center text-md-start">Tratamiento: Templado y Revenido</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-screwdriver-wrench attribute-icon"></i>
+                                        <span class="attribute-text text-center text-md-start">Material: Acero de alta calidad</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
 
         <!-- Sección de Tubos -->
         <section id="tubos" class="py-5">

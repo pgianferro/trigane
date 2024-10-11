@@ -224,6 +224,18 @@ section[id] {
   margin: 0;
 }
 
+/* Estilos generales para los productos */
+.product-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fe5000;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: #333;
+}
+
 /* Estilos para las cards */
 .card {
   background-color: white;
@@ -264,12 +276,29 @@ section[id] {
   font-size: 0.86rem;
 }
 
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
 /* Espacio para la imagen rectangular adicional */
 .img-fluid-pie {
   max-width: 100%;
   height: auto;
   margin-top: -15px;
 }
+
+/* Estilos para los atributos de los productos */
+.attribute-icon {
+  color: #FE5000; /* Color del ícono */
+  margin-right: 5px !important;
+}
+
+.attribute-text {
+  font-weight: bold !important; /* Negrita */
+  font-size: 0.625rem !important; /* Tamaño de letra más pequeño */ /* Alineación centrada */
+}
+
 
 /* Fondo naranja para el título de la sección de Contacto */
 .contacto-header {
