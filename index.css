@@ -3,28 +3,38 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* Estilos personalizados para el menú */
-.navbar-nav .nav-link {
-  color: white;
-  transition: color 0.3s ease;
+
+/* Fondo blanco para la navbar */
+
+/* Colores del texto del menú */
+.navbar-light .navbar-nav .nav-link {
+  color: #000000; /* Texto del menú en negro */
+  transition: color 0.3s ease; /* Transición suave al hacer hover */
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.btn-contacto:hover {
-  color: #fe5000;
+/* Texto naranja al hacer hover en los enlaces del menú */
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fe5000; /* Texto naranja al hacer hover */
 }
 
-.navbar-nav .nav-link.btn-contacto {
-  background-color: #fe5000;
-  color: white;
+/* Botón de contacto con estilo naranja */
+.navbar-light .navbar-nav .nav-link.btn-contacto {
+  background-color: #fe5000; /* Fondo naranja para el botón de contacto */
+  color: #ffffff; /* Texto blanco */
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-link.btn-contacto:hover {
-  background-color: white;
+/* Invertir colores del botón al hacer hover */
+.navbar-light .navbar-nav .nav-link.btn-contacto:hover {
+  background-color: #ffffff; /* Fondo blanco al hacer hover */
+  color: #fe5000; /* Texto naranja al hacer hover */
+  border: 2px solid #fe5000; /* Borde naranja */
 }
+
+
+/* Estilos personalizados para el menú */
 
 /* Estilos para el menú hamburguesa */
 .navbar-toggler {
@@ -34,6 +44,12 @@ body {
 .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23d05b33' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(254, 80, 0, 0.8); /* Borde naranja con sombra al hacer clic */
+  outline: none; /* Elimina el borde predeterminado */
+}
+
 
 /* Estilos generales para compensar el sticky header */
 section[id] {
@@ -55,24 +71,29 @@ section[id] {
 
 .video-background video {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 56.25vw; /* Relación de aspecto 16:9 */
-  min-height: 100vh;
-  min-width: 177.78vh;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Ocupar todo el ancho de la ventana */
+  height: 100vh; /* Ocupar todo el alto de la ventana */
+  object-fit: cover; /* Asegurar que cubra todo el espacio, aunque se corte parte del video */
+  object-position: center -90px; /* Mantener la parte inferior del video visible, cortando la parte superior */
 }
 
-/* Hero con video de fondo y capa superpuesta */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh; /* Reducir un poco la altura mínima */
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-color: #FE5000 !important; /* Fondo naranja */
+}
+
+/* Ajuste del contenedor del contenido para que esté centrado */
+.hero .container {
+  z-index: 2; /* Asegurar que el contenido esté encima del video */
+  padding-top: 20px; /* Añadir un pequeño espacio si es necesario */
+  padding-bottom: 20px; /* Añadir un pequeño espacio si es necesario */
 }
 
 /* Capa de color superpuesta */
@@ -85,12 +106,6 @@ section[id] {
   height: 100%;
   background: rgba(254, 80, 0, 0.3); /* Usa gris (#53565A) con opacidad */
   z-index: 1;
-}
-
-.hero .container {
-  position: relative;
-  z-index: 2;
-  color: white;
 }
 
 .hero h1,
@@ -536,6 +551,8 @@ footer .social-icons img:hover {
     align-items: center; /* Aplica la alineación vertical dentro de cada columna */
     justify-content: center; /* Centra el contenido horizontalmente si es necesario */
   }
+
+  
 }
 
 /* Ajuste de 2 columnas en tablets */
@@ -574,6 +591,18 @@ footer .social-icons img:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/* Ajuste específico para tablets (pantallas de 768px a 1024px de ancho) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    min-height: 60vh; /* Hacemos el video más pequeño en tablets */
+  }
+
+  .video-background video {
+    object-fit: cover; /* Para cubrir el área completa pero con menor tamaño */
+    height: 80vh; /* Reducimos un poco la altura del video */
   }
 }
 
