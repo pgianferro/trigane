@@ -56,6 +56,17 @@ section[id] {
   scroll-margin-top: 60px; /* Ajusta este valor según la altura real del header */
 }
 
+/* Ajuste de margen superior para reducir espacio en pantallas grandes */
+#inicio.hero {
+  padding-top: 0; /* Elimina el padding superior de la sección */
+}
+
+#inicio .row.align-items-center {
+  margin-top: -20px; /* Ajusta el espacio superior de la fila con logo y texto */
+}
+
+
+
 /* Estilos para la sección de Hero */
 
 /* Video de fondo ajustado a cover */
@@ -80,20 +91,30 @@ section[id] {
 }
 
 .hero {
+  background: url("img/trigane_metal_fondo.webp") center center/cover no-repeat;
   position: relative;
-  min-height: 90vh; /* Reducir un poco la altura mínima */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: #FE5000 !important; /* Fondo naranja */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Ajusta la opacidad para oscurecer el fondo */
+  z-index: 1;
 }
 
 /* Ajuste del contenedor del contenido para que esté centrado */
 .hero .container {
-  z-index: 2; /* Asegurar que el contenido esté encima del video */
-  padding-top: 20px; /* Añadir un pequeño espacio si es necesario */
-  padding-bottom: 20px; /* Añadir un pequeño espacio si es necesario */
+  position: relative;
+  z-index: 2;
 }
 
 /* Capa de color superpuesta */
@@ -147,8 +168,13 @@ section[id] {
 .video-container {
   width: 100%;
   height: auto;
-  position: relative;
   overflow: hidden;
+}
+
+.video-container video {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
 }
 
 .video-container iframe {
@@ -205,6 +231,37 @@ section[id] {
 }
 
 .btn-cta:hover {
+  background-color: white;
+  color: #fe5000;
+  border: 2px solid #fe5000;
+}
+
+/* Estilos del texto y botón */
+.hero .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.hero .lead {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.hero .btn-cta {
+  background-color: #fe5000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.hero .btn-cta:hover {
   background-color: white;
   color: #fe5000;
   border: 2px solid #fe5000;
@@ -410,11 +467,11 @@ footer .social-icons img:hover {
     max-width: 250px; /* Limita el ancho máximo */
   }
   .hero .title {
-    font-size: 2.5rem; /* Reducción del tamaño de fuente del título */
+    font-size: 2rem; /* Reducción del tamaño de fuente del título */
     margin-bottom: 15px; /* Ajuste del margen inferior para mantener espaciado adecuado */
   }
   .hero .lead {
-    font-size: 1.7rem; /* Reducción del tamaño de fuente del texto secundario */
+    font-size: 1rem; /* Reducción del tamaño de fuente del texto secundario */
     margin-bottom: 20px; /* Ajuste del margen inferior para separar del botón u otros elementos */
   }
   .hero .btn-cta {
@@ -711,4 +768,25 @@ footer .social-icons img:hover {
     margin-left: auto;
     margin-right: auto;
   }
+
+      /* Reducir el tamaño del logo */
+      .printalot-logo {
+        max-width: 180px; /* Ajusta el ancho del logo según el tamaño deseado */
+        height: auto; /* Mantiene la proporción del logo */
+    }
+
+    /* Reducir el tamaño del título */
+    .hero .title {
+        font-size: 2rem; /* Tamaño más pequeño del título */
+        font-weight: bold;
+        margin-bottom: 5px; /* Ajusta el espacio inferior */
+    }
+
+    /* Reducir el tamaño del subtítulo */
+    .hero .lead {
+        font-size: 1.2rem; /* Tamaño más pequeño del subtítulo */
+        font-weight: normal;
+    }
+
+  
 }

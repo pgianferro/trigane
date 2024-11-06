@@ -60,57 +60,68 @@
     </header>
 
     <main class="bg-light">
-        <!-- Sección de Hero -->
-        <section id="inicio"
-            class="hero bg-dark text-white text-lg-start text-md-center text-center py-2 position-relative d-none d-md-block pt-5 pt-md-7">
-            <div class="video-background">
-                <!-- Video de fondo local -->
-                <video autoplay muted loop playsinline>
-                    <source src="img/trigane_video_1080p_comp.mp4" type="video/mp4">
-                    Tu navegador no soporta la etiqueta de video.
-                </video>
-            </div>
-            <!-- Capa de color superpuesta sobre el video -->
-            <div class="overlay"></div>
+        <!-- Sección Hero -->
+        <section id="inicio" class="hero bg-dark text-white text-center position-relative">
 
-            <div class="container position-relative text-white" style="z-index: 2;">
-                <div class="row">
-                    <!-- Columna con el logo, título, descripción y botón -->
-                    <div class="col-lg-6">
+            <!-- Contenido para tablets y móviles -->
+            <div class="container position-relative text-white d-block d-lg-none">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
                         <!-- Logo de Trigane -->
-                        <img src="img/susferrin-trigane-logo-white.png" alt="Logo Trigane" class="printalot-logo mb-4">
-                        <h1 class="title text-lg-start text-md-center text-white d-none">HERRAMIENTAS DE ALTO IMPACTO</h1>
-                        <p class="lead text-lg-start text-md-center text-white d-none">Llaves · Tubos ·
-                            Adaptadores · Herramientas
-                            Especiales</p>
-                        <a href="https://wa.link/93njz2" class="btn btn-cta d-none" target="_blank">COTIZAR</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Sección Hero para móviles -->
-        <section id="inicio"
-            class="hero hero-mobile bg-dark text-white text-lg-start text-md-center text-center py-2 position-relative d-block d-md-none">
-            <div class="container position-relative text-white" style="z-index: 2;">
-                <div class="row">
-                    <!-- Columna con el logo, título, subtítulo, video promocional y botón -->
-                    <div class="col-lg-12">
-                        <!-- Logo de Trigane -->
-                        <img src="img/susferrin-trigane-logo-white.png" alt="Logo Trigane" class="printalot-logo mb-4">
-                        <!-- Título -->
-                        <h1 class="title">HERRAMIENTAS DE ALTO IMPACTO</h1>
-                        <!-- Subtítulo -->
-                        <p class="lead text-white d-none">Llaves · Tubos · Adaptadores · Herramientas Especiales</p>
-                        <!-- Video promocional que ocupe todo el ancho -->
+                        <img src="img/susferrin-trigane-logo-white.png" alt="Logo Trigane"
+                            class="printalot-logo mb-4 mx-auto d-block">
+
+                        <!-- Título centrado -->
+                        <h1 class="title text-center">HERRAMIENTAS DE ALTO IMPACTO</h1>
+
+                        <!-- Subtítulo centrado -->
+                        <p class="lead text-white text-center">Llaves · Tubos · Adaptadores · Herramientas Especiales
+                        </p>
+
+                        <!-- Video promocional centrado en tablets y móviles -->
                         <div class="video-container mt-5 mb-5">
-                            <video autoplay muted loop playsinline>
+                            <video autoplay muted loop playsinline class="w-100">
                                 <source src="img/trigane_video_1080p_comp.mp4" type="video/mp4">
                                 Tu navegador no soporta la etiqueta de video.
                             </video>
                         </div>
-                        <!-- Botón Cotizar -->
-                        <a href="https://wa.link/93njz2" class="btn btn-cta mt-3" target="_blank">COTIZAR</a>
+
+                        <!-- Botón Cotizar centrado -->
+                        <a href="https://wa.link/93njz2" class="btn btn-cta mt-3 mx-auto d-block"
+                            target="_blank">COTIZAR</a>
                     </div>
+                </div>
+            </div>
+
+            <!-- Contenido para pantallas grandes -->
+            <div class="container d-none d-lg-block">
+                <!-- Fila con logo, título y subtítulo en una sola fila centrada horizontalmente -->
+                <div class="row align-items-center justify-content-center mb-2 mt-1 d-lg-none">
+                    <div class="col-md-3 text-center">
+                        <!-- Logo de Trigane -->
+                        <img src="img/susferrin-trigane-logo-white.png" alt="Logo Trigane"
+                            class="printalot-logo mx-auto d-lg-block">
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <!-- Contenedor de título y subtítulo centrado horizontalmente -->
+                        <h1 class="title mt-3">HERRAMIENTAS DE ALTO IMPACTO</h1>
+                        <p class="lead text-white d-none">Llaves · Tubos · Adaptadores · Herramientas Especiales</p>
+                    </div>
+                </div>
+
+                <!-- Video centrado con menor margen lateral en pantallas grandes -->
+                <div class="row justify-content-center mb-4">
+                    <div class="col-lg-11">
+                        <video autoplay muted loop playsinline class="w-100">
+                            <source src="img/trigane_video_1080p_comp.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- Botón Cotizar centrado en pantallas grandes -->
+                <div class="d-flex justify-content-center d-lg-none">
+                    <a href="https://wa.link/93njz2" class="btn btn-cta mt-3" target="_blank">COTIZAR</a>
                 </div>
             </div>
         </section>
@@ -120,7 +131,10 @@
         <section id="about-trigane" class="py-4 bg-light mt-5 pb-1">
             <div class="container">
                 <p class="text-center fs-4 fw-light">
-                En Trigane, con más de 50 años de experiencia, fabricamos herramientas de alta calidad para quienes valoran el trabajo bien hecho. Nos especializamos en llaves de golpe, tubos, extensiones, herramientas antichispa y más. Como industria 100 % argentina, nos enorgullece contar con el respaldo y la comercialización de Susferrin SRL, asegurando la calidad y compromiso que nos define.
+                    En Trigane, con más de 50 años de experiencia, fabricamos herramientas de alta calidad para quienes
+                    valoran el trabajo bien hecho. Nos especializamos en llaves de golpe, tubos, extensiones,
+                    herramientas antichispa y más. Como industria 100 % argentina, nos enorgullece contar con el
+                    respaldo y la comercialización de Susferrin SRL, asegurando la calidad y compromiso que nos define.
                 </p>
             </div>
         </section>
@@ -139,8 +153,8 @@
                     <div class="col-lg-6 mb-4">
                         <div class="row align-items-center">
                             <div class="col-md-6">
-                                <img src="img/productos/01-Llave_de_Golpe_Hexagonal_sf.webp" alt="Llave de Golpe Hexagonal"
-                                    class="img-fluid">
+                                <img src="img/productos/01-Llave_de_Golpe_Hexagonal_sf.webp"
+                                    alt="Llave de Golpe Hexagonal" class="img-fluid">
                             </div>
                             <div class="col-md-6">
                                 <h3 class="product-title mt-md-0 mt-3 text-center text-md-start">LLAVE DE GOLPE
@@ -170,8 +184,8 @@
                     <div class="col-lg-6 mb-4">
                         <div class="row align-items-center">
                             <div class="col-md-6">
-                                <img src="img/productos/02-Llave_de_Golpe_Estriada_sf.webp" alt="Llave de Golpe Estriada"
-                                    class="img-fluid">
+                                <img src="img/productos/02-Llave_de_Golpe_Estriada_sf.webp"
+                                    alt="Llave de Golpe Estriada" class="img-fluid">
                             </div>
                             <div class="col-md-6">
                                 <h3 class="product-title mt-md-0 mt-3 text-center text-md-start">LLAVE DE GOLPE ESTRIADA
@@ -403,7 +417,8 @@
                             <div class="col-md-6">
                                 <h3 class="product-title mt-md-0 mt-3 text-center text-md-start">TUBO PUNTA HEXAGONAL
                                 </h3>
-                                <p class="product-description text-center text-md-start">Tubo Punta Hexagonal Milimétrico/Pulgada</p>
+                                <p class="product-description text-center text-md-start">Tubo Punta Hexagonal
+                                    Milimétrico/Pulgada</p>
 
                                 <!-- Atributos del producto en una sola fila -->
                                 <div
@@ -427,7 +442,8 @@
                     <div class="col-lg-6 mb-4">
                         <div class="row align-items-center">
                             <div class="col-md-6">
-                                <img src="img/productos/10-tubo_hexagonal_sf.webp" alt="Tubo Hexagonal" class="img-fluid">
+                                <img src="img/productos/10-tubo_hexagonal_sf.webp" alt="Tubo Hexagonal"
+                                    class="img-fluid">
                             </div>
                             <div class="col-md-6">
                                 <h3 class="product-title mt-md-0 mt-3 text-center text-md-start">TUBO HEXAGONAL</h3>
@@ -593,11 +609,12 @@
                     <div class="col-lg-6 mb-4">
                         <div class="row align-items-center">
                             <div class="col-md-6">
-                                <img src="img/productos/18-universal_sf.webp" alt="Movimiento Universal y Tubos Cardánicos"
-                                    class="img-fluid">
+                                <img src="img/productos/18-universal_sf.webp"
+                                    alt="Movimiento Universal y Tubos Cardánicos" class="img-fluid">
                             </div>
                             <div class="col-md-6">
-                                <h3 class="product-title mt-md-0 mt-3 text-center text-md-start">MOVIMIENTO UNIVERSAL Y TUBO
+                                <h3 class="product-title mt-md-0 mt-3 text-center text-md-start">MOVIMIENTO UNIVERSAL Y
+                                    TUBO
                                     CARDÁNICO</h3>
                                 <p class="product-description text-center text-md-start">Movimiento Universal y Tubos
                                     Cardánicos</p>
