@@ -267,6 +267,12 @@ section[id] {
   border: 2px solid #fe5000;
 }
 
+/*PÁRRAFO EXPLICATIVO*/
+#about-trigane p {
+  text-align: justify;
+}
+
+
 /*CATEGORIAS*/
 /* Fondo naranja para el título */
 .llaves-header {
