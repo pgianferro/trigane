@@ -3,7 +3,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-
 /* Fondo blanco para la navbar */
 
 /* Colores del texto del menú */
@@ -23,7 +22,25 @@ body {
   color: #ffffff; /* Texto blanco */
   padding: 0.5rem 1rem;
   border-radius: 5px;
+  margin: 0 10px; /* Espaciado a los lados */
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo para el nuevo botón Herramientas de Mano */
+.navbar-light .navbar-nav .nav-link.btn-nuevo {
+  background-color: #fe5000; /* Fondo naranja */
+  color: #ffffff; /* Texto blanco */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin: 0 10px; /* Espaciado a los lados */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Invertir colores al hacer hover */
+.navbar-light .navbar-nav .nav-link.btn-nuevo:hover {
+  background-color: #ffffff; /* Fondo blanco */
+  color: #fe5000; /* Texto naranja */
+  border: 2px solid #fe5000; /* Borde naranja */
 }
 
 /* Invertir colores del botón al hacer hover */
@@ -32,7 +49,6 @@ body {
   color: #fe5000; /* Texto naranja al hacer hover */
   border: 2px solid #fe5000; /* Borde naranja */
 }
-
 
 /* Estilos personalizados para el menú */
 
@@ -50,7 +66,6 @@ body {
   outline: none; /* Elimina el borde predeterminado */
 }
 
-
 /* Estilos generales para compensar el sticky header */
 section[id] {
   scroll-margin-top: 60px; /* Ajusta este valor según la altura real del header */
@@ -64,8 +79,6 @@ section[id] {
 #inicio .row.align-items-center {
   margin-top: -20px; /* Ajusta el espacio superior de la fila con logo y texto */
 }
-
-
 
 /* Estilos para la sección de Hero */
 
@@ -107,7 +120,12 @@ section[id] {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Ajusta la opacidad para oscurecer el fondo */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /* Ajusta la opacidad para oscurecer el fondo */
   z-index: 1;
 }
 
@@ -184,7 +202,6 @@ section[id] {
   width: 100%;
   height: 100%;
 }
-
 
 .tregane-logo {
   width: 250px; /* Mantén este valor si es necesario para el tamaño de la imagen */
@@ -272,6 +289,39 @@ section[id] {
   text-align: justify;
 }
 
+/* Estilo para el mini banner */
+
+
+/* Ajustar tamaño y centrado del mini banner */
+.mini-banner {
+  max-width: 50%; /* Limitar el ancho máximo al 50% del viewport */
+  margin: 0 auto; /* Centrar el banner horizontalmente */
+  padding: 10px 20px; /* Ajustar padding interno */
+  background-color: white; /* Fondo del banner */
+  color: black; /* Color del texto */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor */
+  text-align: center; /* Centrar el texto */
+  font-size: 1rem; /* Ajustar tamaño de fuente */
+  animation: float 3s ease-in-out infinite; /* Animación de flotación */
+  transition: transform 0.3s ease; /* Efecto suave al moverse */
+}
+
+.mini-banner:hover {
+  transform: scale(1.05); /* Agranda ligeramente el banner al hacer hover */
+}
+
+/* Animación de subir y bajar */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0); /* Posición inicial */
+  }
+  50% {
+    transform: translateY(-10px); /* Subir ligeramente */
+  }
+}
+
+
 
 /*CATEGORIAS*/
 /* Fondo naranja para el título */
@@ -353,7 +403,7 @@ section[id] {
 
 /* Estilos para los atributos de los productos */
 .attribute-icon {
-  color: #FE5000; /* Color del ícono */
+  color: #fe5000; /* Color del ícono */
   margin-right: 5px !important;
 }
 
@@ -361,7 +411,6 @@ section[id] {
   font-weight: bold !important; /* Negrita */
   font-size: 0.625rem !important; /* Tamaño de letra más pequeño */ /* Alineación centrada */
 }
-
 
 /* Fondo naranja para el título de la sección de Contacto */
 .contacto-header {
@@ -507,7 +556,7 @@ footer .social-icons img:hover {
     justify-content: center;
     overflow: hidden;
     padding: 0; /* Elimina cualquier relleno extra */
-    margin: 0;  /* Asegúrate de que no haya márgenes que separen los elementos */
+    margin: 0; /* Asegúrate de que no haya márgenes que separen los elementos */
     position: relative; /* Necesario para asegurar que los elementos estén encima del fondo */
   }
 
@@ -517,26 +566,25 @@ footer .social-icons img:hover {
     z-index: 2;
     text-align: center;
     padding-top: 1rem; /* Ajusta el relleno superior si necesitas algo de espacio */
-    padding-bottom: 0;  /* Elimina cualquier relleno innecesario en la parte inferior */
+    padding-bottom: 0; /* Elimina cualquier relleno innecesario en la parte inferior */
   }
 
   .hero-mobile .title {
     font-size: 2rem; /* Mantén el tamaño del título ajustado a pantallas móviles */
     margin-bottom: 0.5rem; /* Reducir el margen inferior para acercarlo al video */
     color: white;
-}
+  }
 
-.hero-mobile .lead {
+  .hero-mobile .lead {
     font-size: 1.2rem;
     margin-bottom: 1rem; /* Reducir el espacio entre el subtítulo y el video */
-}
+  }
 
-.hero-mobile video {
+  .hero-mobile video {
     width: 100vw; /* Asegura que el video ocupe todo el ancho de la pantalla */
     height: auto;
     object-fit: cover; /* Para que el video se ajuste correctamente */
-}
-
+  }
 
   .hero-mobile .btn-cta {
     background-color: #fe5000;
@@ -570,7 +618,24 @@ footer .social-icons img:hover {
     ); /* Añadimos una ligera superposición para mejorar la legibilidad del texto */
     z-index: 1; /* Esta capa queda justo debajo del contenido */
   }
+  .navbar-light .navbar-nav {
+    text-align: left; /* Asegurar que todos los elementos estén alineados a la izquierda */
+  }
+  
+  .navbar-light .navbar-nav .nav-link.btn-nuevo,
+  .navbar-light .navbar-nav .nav-link.btn-contacto {
+      margin: 0.2rem auto; /* Reducir márgenes verticales */
+  }
+  
+  .mini-banner {
+    max-width: 90%; /* En dispositivos pequeños, usar un ancho del 90% */
+    font-size: 0.9rem; /* Reducir tamaño de fuente */
+    padding: 8px 15px; /* Reducir padding interno */
+  }
 }
+
+
+
 
 /* Estilos específicos para dispositivos pequeños */
 @media (max-width: 767.98px) {
@@ -643,8 +708,6 @@ footer .social-icons img:hover {
     align-items: center; /* Aplica la alineación vertical dentro de cada columna */
     justify-content: center; /* Centra el contenido horizontalmente si es necesario */
   }
-
-  
 }
 
 /* Ajuste de 2 columnas en tablets */
@@ -775,24 +838,28 @@ footer .social-icons img:hover {
     margin-right: auto;
   }
 
-      /* Reducir el tamaño del logo */
-      .printalot-logo {
-        max-width: 180px; /* Ajusta el ancho del logo según el tamaño deseado */
-        height: auto; /* Mantiene la proporción del logo */
-    }
+  /* Reducir el tamaño del logo */
+  .printalot-logo {
+    max-width: 180px; /* Ajusta el ancho del logo según el tamaño deseado */
+    height: auto; /* Mantiene la proporción del logo */
+  }
 
-    /* Reducir el tamaño del título */
-    .hero .title {
-        font-size: 2rem; /* Tamaño más pequeño del título */
-        font-weight: bold;
-        margin-bottom: 5px; /* Ajusta el espacio inferior */
-    }
+  /* Reducir el tamaño del título */
+  .hero .title {
+    font-size: 2rem; /* Tamaño más pequeño del título */
+    font-weight: bold;
+    margin-bottom: 5px; /* Ajusta el espacio inferior */
+  }
 
-    /* Reducir el tamaño del subtítulo */
-    .hero .lead {
-        font-size: 1.2rem; /* Tamaño más pequeño del subtítulo */
-        font-weight: normal;
-    }
+  /* Reducir el tamaño del subtítulo */
+  .hero .lead {
+    font-size: 1.2rem; /* Tamaño más pequeño del subtítulo */
+    font-weight: normal;
+  }
 
-  
+  .navbar-light .navbar-nav .nav-link.btn-nuevo,
+  .navbar-light .navbar-nav .nav-link.btn-contacto {
+    margin: 0 5px; /* Ajusta el espacio horizontal entre los botones */
+  }
+
 }
